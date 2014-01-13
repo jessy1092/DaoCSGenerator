@@ -58,9 +58,8 @@ public class CSDaoGenerator
 		
 		Entity history = schema.addEntity("History");
 		history.addIdProperty();
-		history.addDateProperty("created_at");			// Recode scan photo time
-		history.addDateProperty("upload_at");           // Recode upload photo time
-		history.addDateProperty("updated_at");			// Recode updated from server
+		history.addDateProperty("time");			// history time
+		history.addStringProperty("log");			// log
 		Property barcode_id = history.addLongProperty("barcode_id").notNull().getProperty();
 		
 		// Control Relation manually.
