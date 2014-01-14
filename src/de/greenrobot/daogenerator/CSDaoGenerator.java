@@ -48,7 +48,7 @@ public class CSDaoGenerator
 		Entity barcode = schema.addEntity("Barcode");
 		barcode.addIdProperty();
 		barcode.addStringProperty("barcode").unique();
-		barcode.addStringProperty("name").unique();
+		barcode.addStringProperty("name");
 		barcode.addStringProperty("loc_photo1");
 		barcode.addStringProperty("loc_photo2");
 		barcode.addStringProperty("loc_photo3");
